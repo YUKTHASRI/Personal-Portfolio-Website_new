@@ -1,7 +1,14 @@
-// Mobile Navbar Toggle
-const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("nav-menu");
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("nav-links");
 
-hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
+  if (hamburger && navMenu) {
+    hamburger.addEventListener("click", () => {
+      console.log("Hamburger clicked ✅"); // Debug
+      navMenu.classList.toggle("active");
+      console.log("Menu classes:", navMenu.className); // Debug
+    });
+  } else {
+    console.error("❌ Either #hamburger or #nav-links not found in DOM.");
+  }
 });
