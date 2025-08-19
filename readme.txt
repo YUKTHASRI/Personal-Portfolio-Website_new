@@ -1,4 +1,3 @@
-# portfolio-website
 # Yuktha Sri's Portfolio Website  
 
 This is a **personal portfolio website** showcasing my **projects, work experience, education, and contact information**.  
@@ -14,7 +13,7 @@ This is a **personal portfolio website** showcasing my **projects, work experien
 
 1.Clone the Repository  
 ```sh
-git clone file:///C:/Users/yukthasri/OneDrive/Desktop/HTML%20Tutorial/personal%20portfolio/index.html
+git clone git clone https://github.com/YUKTHASRI/portfolio-website.git
 
 2.Navigate to the Project Folder
 cd portfolio-website
