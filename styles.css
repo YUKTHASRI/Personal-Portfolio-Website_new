@@ -179,3 +179,51 @@ footer {
         display: block;
     }
 }
+/* Hide menu by default on mobile */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Show when active */
+.nav-links.active {
+  display: flex;
+}
+
+/* Always visible on larger screens */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    background: #0a1f44;
+    position: absolute;
+    top: 60px;
+    right: -250px; /* Start hidden off-screen */
+    width: 200px;
+    padding: 1rem;
+    transition: right 0.3s ease-in-out; /* Smooth slide */
+  }
+
+  .nav-links.active {
+    right: 10px; /* Slide into view */
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    border-bottom: 1px solid #142850;
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+}

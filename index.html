@@ -1,144 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Home</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuktha Sri - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header/Navbar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">Yuktha Sri</div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="Resume.pdf" target="_blank" class="resume-btn">Download Resume</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">&#9776;</div>
-        </nav>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Yuktha Sri</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.pdf" download class="btn">Download Resume</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">☰</div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="home">
-        <div class="container">
-            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Hello, I'm <span id="name">Yuktha Sri</span></h1>
-            <p id="bio">A passionate Software Engineer specializing in Front-End Development, AI, and ML.</p>
-            <a href="Resume.pdf" target="_blank" class="download-btn">Download Resume</a>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Yuktha Sri</span></h1>
+      <p>Aspiring Software Engineer | Passionate about Web Development & AI</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="about-container">
-            <h2>About Me</h2>
-            <p>I am a software engineer with expertise in front-end development, data science, and AI.</p>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Software Engineer graduate with a strong foundation in software development, data science, and front-end technologies. I enjoy building user-friendly applications and solving real-world problems with innovative solutions.
+    </p>
+  </section>
 
-            <h3>Education</h3>
-            <div class="education">
-                <div class="edu-item">
-                    <h4>M.Tech Integrated in Software Engineering</h4>
-                    <p>Vellore Institute of Technology, Chennai, India (2018 - 2023)</p>
-                    <p><strong>Percentage:</strong> 7.89%</p>
-                </div>
-                <div class="edu-item">
-                    <h4>Intermediate Education</h4>
-                    <p>Narayana Junior College, Tirupathi, India (2016 - 2018)</p>
-                    <p><strong>Percentage:</strong> 86.1%</p>
-                </div>
-                <div class="edu-item">
-                    <h4>Secondary Education</h4>
-                    <p>Bhanodaya School, Kanakkampalayam, India (2016)</p>
-                    <p><strong>GPA:</strong> 9.0</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML, CSS, JavaScript, React.js, Python, Java, Machine Learning, AI, Data Science</li>
+    </ul>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="skills-container">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>HTML, CSS, JavaScript,React.js,Python, Java,Machine Learning,Data Science</li>
-                
-            </ul>
-        </div>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive portfolio showcasing my skills, projects, and experience.</p>
+      </div>
+      <div class="card">
+        <h3>Expense Tracker</h3>
+        <p>A web app to track income and expenses, visualize data, and manage budgets.</p>
+      </div>
+      <div class="card">
+        <h3>Recipe Wizard</h3>
+        <p>An AI-powered recipe recommendation app using Supabase and Flask-React stack.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="experience-container">
-            <h2>Work Experience</h2>
-            <div class="work-item">
-                <h4>ALSTOM – ANUBHAV Internship Program</h4>
-                <p><strong>Sept 2022 – June 2023</strong></p>
-                <ul>
-                    <li>Developed Python-based model for analyzing code using AST library.</li>
-                    <li>Implemented algorithms for classification and recognition.</li>
-                    <li>Exported results to Excel using Pandas & Openpyxl.</li>
-                </ul>
-            </div>
-            <div class="work-item">
-                <h4>AINE AI – Data Science Internship</h4>
-                <p><strong>Sept 2021 – Oct 2021</strong></p>
-                <ul>
-                    <li>Applied CNNs to classify X-ray images of COVID-19 patients.</li>
-                    <li>Created pipelines for healthcare diagnosis support.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+  <!-- Hobbies Section -->
+  <section id="hobbies" class="hobbies">
+    <h2>Hobbies</h2>
+    <ul class="hobbies-list">
+      <li>Traveling</li>
+      <li>Photography</li>
+      <li>Cooking</li>
+      <li>Reading Tech Blogs</li>
+    </ul>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="projects-container">
-            <h2>My Projects</h2>
-            <div class="project-gallery">
-                <div class="project">
-                    <img src="ecommerce.PNG" alt="E-Commerce Website" class="project-img">
-                    <h3>Mini E-Commerce Website</h3>
-                    <p>Developed an e-commerce platform using Java.</p>
-                </div>
-                <div class="project">
-                    <img src="passport.PNG" alt="Passport Automation System" class="project-img">
-                    <h3>Passport Automation System</h3>
-                    <p>Designed a system using HTML, CSS, and Java.</p>
-                </div>
-                <div class="project">
-                    <img src="stock.PNG" alt="Stock Market Analysis" class="project-img">
-                    <h3>Loss Prevention in Stock Market</h3>
-                    <p>Used Neural Networks to analyze stock values.</p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact-container">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <input type="text" id="username" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Yuktha Sri. All rights reserved.</p>
+  </footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Yuktha Sri. All Rights Reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
